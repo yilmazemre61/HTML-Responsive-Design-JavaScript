@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 7 - Working with JavaScript</title>
+    <meta name="description" content="this lesson will cover JavaScript and jQuery">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Zen+Loop&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+
+<body>
+    <!-- add header-->
+    <header id="navigation" class="menu-row"></header>
+    <main>
+        <!-- add masthead-->
+        <section class="masthead">
+            <!-- adding a div so that we can add a background color-->
+            <div>
+                <!-- adding another div to contain some links-->
+                <div>
+                    <h1>This is our main title</h1>
+                    <a href="#">Link One</a>
+                    <a href="#">Link Two</a>
+                </div>
+            </div>
+        </section>
+        <!-- this row will be 3 columns, but the columns will be different sizes, we are going to add
+        a class but this is because we may target this section with js-->
+        <section class="row-one">
+            <!-- left article start-->
+            <div>
+                <h3>Title One</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium soluta harum magnam consequatur
+                    ad
+                    quidem. Fugit earum explicabo quibusdam qui natus nesciunt quia cupiditate cumque dignissimos,
+                    corporis
+                    sunt odio mollitia.
+                    Corrupti aut dignissimos doloremque molestias maxime quos explicabo facere in perspiciatis sit
+                    voluptatum architecto quae quisquam, deleniti recusandae fugiat neque. Eveniet quia excepturi illum
+                    aliquid dolor modi. Temporibus, accusantium similique?</p>
+            </div>
+            <!-- center article start-->
+            <div>
+                <h3>Title One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia pariatur beatae atque dicta vero
+                    provident maiores labore ex dolorum sunt voluptate modi quas dignissimos, dolore fuga corporis
+                    reiciendis enim?
+                    Eligendi reprehenderit blanditiis illo praesentium aliquam perferendis harum consequatur ipsa, rem
+                    laudantium voluptatum ducimus consequuntur placeat earum beatae cupiditate dolore reiciendis dolorum
+                    perspiciatis et, quia unde! Blanditiis adipisci facere necessitatibus!</p>
+            </div>
+            <!-- right article start-->
+            <div>
+                <h3>Title One</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptatum similique cupiditate
+                    natus
+                    reprehenderit corporis, quia nobis facere recusandae sunt! Officia nulla culpa numquam hic nesciunt
+                    neque minus excepturi mollitia?
+                    Iusto deserunt quas minima consequatur, minus illo nostrum repellendus suscipit, qui error nobis
+                    facilis! Temporibus perspiciatis non, minus soluta placeat magnam in, totam, cum eligendi alias at
+                    rem
+                    quae veritatis?</p>
+            </div>
+        </section>
+        <!-- adding the second row, this will be 6 columns and contain images...-->
+        <section class="row-two">
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+            <div>
+                <img src="./images/image-one.jpg" alt="image">
+            </div>
+
+        </section>
+        <!-- the next 2 rows will have 2 columns each containing an image and text, the difference
+        will be the rows and they will be in reverse-->
+        <section class="row-three">
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laudantium repellat vero amet
+                    perspiciatis assumenda deleniti eligendi rerum cumque fugit? Adipisci reiciendis architecto magni
+                    fugiat
+                    similique illum consequuntur maiores unde.
+                    Non explicabo accusantium molestias perspiciatis assumenda hic accusamus repudiandae debitis,
+                    deserunt,
+                    molestiae rerum praesentium labore perferendis numquam culpa placeat eveniet laboriosam aliquid!
+                    Amet
+                    blanditiis aliquam impedit ducimus sed voluptatum fugit.
+                    In sequi tempora dolorum expedita quam eum eos distinctio dolorem ad hic! Fugit quibusdam vero
+                    minima,
+                    debitis odio aspernatur itaque enim delectus eius, vitae sunt nobis, quo asperiores reprehenderit
+                    aliquid!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eius corporis fugit exercitationem
+                    dolore quos nulla, tenetur est aliquid veritatis, repellat ut officia ad libero, tempore saepe culpa
+                    perspiciatis! Sunt.
+                    Quas sit possimus deserunt totam aperiam accusantium, excepturi soluta rem magni optio fuga libero
+                    corporis voluptatibus animi veniam doloribus? Dolore atque debitis sint aut obcaecati quia dicta
+                    inventore repellendus necessitatibus.</p>
+            </div>
+            <div>
+                <img src="./images/image-two.jpg" alt="image two">
+            </div>
+        </section>
+        <section class="row-four" id="row-four">
+            <div>
+                <img src="./images/image-three.jpg" alt="image three">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur, vitae nobis eveniet voluptatem
+                    cum
+                    cupiditate dolor possimus sunt. Quos sunt animi quam! Error tempore in debitis ut fugiat numquam.
+                    Ea natus quasi porro ipsam accusamus ex in alias nisi veniam. Saepe quibusdam ratione minima
+                    quisquam
+                    quis tenetur alias illum. Debitis amet dignissimos quis! Dolore ullam esse deserunt vero aut?
+                    Modi iste odit, quam dolor, corrupti illo, minus nostrum quibusdam necessitatibus recusandae ea
+                    molestias dolores rerum! Molestias, reprehenderit nulla magni sed omnis dolor mollitia, distinctio
+                    molestiae similique, commodi incidunt maxime!</p>
+                <p id="changefont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nemo molestias
+                    aliquid corporis
+                    nostrum quaerat nulla explicabo. Delectus doloribus temporibus officiis, iste dolores aliquam veniam
+                    quibusdam ad praesentium? Quia, nihil?
+                    Doloremque quasi maxime magnam veritatis! Rerum quaerat dolore dignissimos adipisci ea magni enim
+                    excepturi iure. Praesentium aperiam fugit corrupti. Nisi maxime harum eius quis distinctio corporis
+                    nesciunt ad, debitis ullam.</p>
+            </div>
+        </section>
+        <!-- add our galery section-->
+        <section id="gallery-btn-row" class="gallery-btn-row">
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn" onclick="two()">2</button>
+            <button class="btn active" onclick="four()">4</button>
+        </section>
+        <section class="gallery-row">
+            <article class="gallery-column">
+                <div><img src="./images/image-two.jpg" alt="image"></div>
+                <div><img src="./images/image-one.jpg" alt="image"></div>
+                <div><img src="./images/image-three.jpg" alt="image"></div>
+                <div><img src="./images/image-four.jpg" alt="image"></div>
+            </article>
+            <article class="gallery-column">
+                <div><img src="./images/image-two.jpg" alt="image"></div>
+                <div><img src="./images/image-one.jpg" alt="image"></div>
+                <div><img src="./images/image-three.jpg" alt="image"></div>
+                <div><img src="./images/image-four.jpg" alt="image"></div>
+            </article>
+            <article class="gallery-column">
+                <div><img src="./images/image-two.jpg" alt="image"></div>
+                <div><img src="./images/image-one.jpg" alt="image"></div>
+                <div><img src="./images/image-three.jpg" alt="image"></div>
+                <div><img src="./images/image-four.jpg" alt="image"></div>
+            </article>
+            <article class="gallery-column">
+                <div><img src="./images/image-two.jpg" alt="image"></div>
+                <div><img src="./images/image-one.jpg" alt="image"></div>
+                <div><img src="./images/image-three.jpg" alt="image"></div>
+                <div><img src="./images/image-four.jpg" alt="image"></div>
+            </article>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+
+
+
+</body>
+
+</html>

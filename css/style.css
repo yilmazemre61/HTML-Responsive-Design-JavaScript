@@ -1,0 +1,228 @@
+/* Bona Nova        Zen Loop */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bona Nova', sans-serif;
+}
+p,a{
+    font-family: 'Zen Loop', sans-serif;
+    font-size: 16px;
+}
+body{
+    margin: 0px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-rows: auto;
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+header > div{
+    flex-grow: 1;
+    height: 80px;
+} 
+header > div > img{
+    height: 100%;
+    width: auto;
+}
+header > nav > ul{
+    display: flex;
+    list-style: none;
+}
+header > nav > ul > li{
+    padding: 0px 15px;
+}
+header > nav > ul > li > a{
+    color: #000;
+    text-decoration: none;
+}
+header > nav > ul > li:hover > a{
+    color: #004b87;
+}
+main{
+    grid-area: main;
+    grid-template-areas: 
+    "masthead masthead masthead masthead"
+    "row-one row-one row-one row-one"
+    "row-two row-two row-two row-two"
+    "row-three row-three row-three row-three"
+    "row-four row-four row-four row-four";
+    grid-template-rows: auto;
+}
+.masthead{
+    grid-area: masthead;
+    background-image: url("../images/masthead.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.masthead > div:nth-child(1){
+    background-color: rgba(0, 75, 135, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.masthead > div > div > h1{
+    font-size: 36px;
+    color: #fff;
+}
+.masthead > div > div > a{
+    border: solid 2px #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.masthead > div > div > a:hover{
+    background-color: #fff;
+    color: #64a70b;
+}
+.row-one{
+    grid-area: row-one;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    align-items: stretch;
+    background-color: #000;
+}
+.row-one > div{
+    padding: 15px;
+    color: #fff;
+}
+.row-two{
+    grid-area: row-two;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    column-gap: 5px;
+    justify-content: center;
+    padding: 2% 0%;
+}
+.row-two > div{
+    width: 100%;
+    height: auto;
+}
+.row-two > div > img{
+    width: 100%;
+    height: auto;
+}
+.row-three{
+    grid-area: row-three;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #004b87;
+}
+.row-three > div:nth-child(1){
+    padding: 15px;
+    color: #fff;
+}
+.row-three > div > img{
+    width: auto;
+    height: 350px;
+}
+.row-four{
+    grid-area: row-four;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 2% 5%;
+    background-color: #64a70b;
+}
+.row-four > div:nth-child(2){
+    padding: 15px;
+    color: #fff;
+}
+.row-four > div > img{
+    width: auto;
+    height: 350px;
+}
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: auto;
+    align-items: center;
+    background-color: #0e0e0e;
+}
+footer > div{
+    color: #fff;
+    padding: 15px;
+}
+footer > div > img{
+    width: 200px;
+    height: auto;
+}
+
+.dropbtn{
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus{
+    text-decoration: underline;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: red;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    list-style: none;
+    padding-left: 0px;
+}
+.dropdown-content > a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover{
+    background-color: #ddd;
+}
+.show{
+    display: block;
+}
+
+.gallery-row{
+    padding: 0px 4px;
+}
+.gallery-column{
+    display: grid;
+}
+.gallery-column > div > img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.gallery-btn-row{
+    padding: 5%;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: #ddd;
+}
+
+.scrolled-menu{
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+}
+.scrolled-menu > nav > ul > li > a{
+    color: #ffffff;
+}
+
